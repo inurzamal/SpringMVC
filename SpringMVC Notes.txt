@@ -1,0 +1,38 @@
+Configure Apache Tomcat Server with Eclipse Project
+Create Maven Project
+Add Dependecies in the pom.xml file
+
+
+--inside <build> tag---
+     <plugins>
+     <plugin>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.2.2</version>
+        </plugin>
+    </plugins>
+
+--inside <dependencies> tag---
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>javax.servlet-api</artifactId>
+		<version>3.1.0</version>
+		<scope>provided</scope>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-webmvc</artifactId>
+		<version>5.2.9.RELEASE</version>
+	</dependency>
+
+--------------------------------------------------
+Steps:
+1. Configure DispatcherServlet class in web.xml (Front Controller)
+2. Create Spring Configuration File [inside WEB-INF parallel to web.xml, file name is serveletName-servlet] (To declare beans)
+3 Configure View Resolver- InternalResourceViewResolver, declare the bean in configuration file 
+4. Create Controller (Java Class with @Controller annotation)
+5. Create a View (to show pages)
+
+
+
