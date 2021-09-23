@@ -13,6 +13,8 @@
 	<h2>Your Email is: ${user.email}</h2>
 	<h2>Your Password: ${user.pass}</h2>
 	
+	<p> ${Msg } </p>
+	
 
 </body>
 </html>

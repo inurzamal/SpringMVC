@@ -20,8 +20,11 @@
 
 	<div class="container mt-5">
 	
-	<h2>Registration Form </h2><br>
-
+	<h3> Register in ${Header} </h3>
+	<p>${Desc } </p>
+	
+	<br>
+	
 		<form action="processform" method = "post">
 		
 			<div class="mb-3">

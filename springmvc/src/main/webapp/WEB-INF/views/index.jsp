@@ -10,7 +10,13 @@
 <body>
 <h2>My First Spring MVC WebApp</h2>
 <p>This page is supplied by controller at url /ProjectName which is springmvc here </p>
-<a href="/springmvc/about">About Us</a>
+
+<ul>
+  <li><a class="active" href="/springmvc">Home</a></li>
+  <li><a href="/springmvc/about">About Us</a></li>
+  <li><a href="/springmvc/help">Help</a></li>
+  <li><a href="/springmvc/contact">Contact Us</a></li>
+</ul>
 
 
 <%

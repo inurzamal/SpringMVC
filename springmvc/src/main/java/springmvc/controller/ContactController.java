@@ -11,16 +11,26 @@ import springmvc.model.User;
 @Controller
 public class ContactController {
 	
+	@ModelAttribute
+	public void commonData(Model m) {		
+		m.addAttribute("Header", "Coding Terminal");
+		m.addAttribute("Desc", "The Dev World");
+		m.addAttribute("Msg", "These data are collected from user form");		
+	}
+	
 	@RequestMapping("/contact")
-	public String showForm()
-	{		
+	public String showForm(Model m)
+	{
+//		m.addAttribute("Header", "Coding Terminal");
 		return "contact";
 	}
 	
 	@RequestMapping(path = "/processform", method=RequestMethod.POST)	
 	public String HandleForm(@ModelAttribute User user, Model model) {
-	
-		return "success";
+		
+//		model.addAttribute("Msg", "These data are collected from user form");
+				
+			return "success";
 		
 	}
 
