@@ -14,6 +14,7 @@
 	<h2>Your Password: ${user.pass}</h2>
 	
 	<p> ${Msg } </p>
+	<p style="color:green"> ${ss } </p>
 	
 
 </body>
