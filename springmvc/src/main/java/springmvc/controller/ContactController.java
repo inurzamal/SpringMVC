@@ -35,6 +35,11 @@ public class ContactController {
 		
 //		model.addAttribute("Msg", "These data are collected from user form");
 				
+		if(user.getName().isBlank())
+		{
+			return "redirect:/contact";
+		}
+		
 		int id = this.userService.createUser(user);
 		
 		model.addAttribute("ss", "User created with id "+id);
