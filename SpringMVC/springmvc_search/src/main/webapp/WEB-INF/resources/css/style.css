@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+body{
+	background-color: white;
+}
+
+img.banner{
+  max-width: 100%;
+  height: auto;
+}
+
+div.dateTime{
+	
+	width:100px;
+	float: right;
+	background-color: #CCCCFF;
+	margin: auto;
+}
